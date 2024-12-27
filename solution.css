@@ -1,0 +1,11 @@
+A more robust and consistent solution is to use flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex;
+}
+```
+
+Flexbox provides a more predictable and cross-browser compatible way to handle layout, especially in situations where space is constrained. The `box-sizing` property ensures that padding and border are included in the element's width calculation.
